@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="res/chartist.min.css" type="text/css" media="all" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
+  <title>MOC</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    body {
+      font-family: 'Zilla Slab', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-dark">
+        <h1 class="p-3 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+            <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z" />
+          </svg>Dev'El</h1>
+      </div>
+    </div>
+    <div class="row" style="background: #F8F9FB">
+      <div class="col-md-6 col-12 d-flex justify-content-center bg-light align-items-center mt-5
+      mb-5" style="height:auto;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-bug ml" viewBox="0 0 16 16">
+          <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z" />
+        </svg>
+      </div>
+      <div class="col-md-6 col-12">
+        <h3 class="p-3 bg-dark text-light rounded-bottom">How to <b style="color: tomato">Annoy?</b></h3>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-alert w-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  About Blog
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col rounded">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nemo totam veritatis odio fugiat delectus, similique quo incidunt reprehenderit, fuga doloremque rerum itaque ad ut commodi nobis tenetur sapiente? Laborum eum quam pariatur illo ea sit reiciendis, tempora ex id ducimus doloremque, quo blanditiis nesciunt praesentium obcaecati asperiores natus consequuntur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn  collapsed w-100" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  OTP spam <b style="color: tomato">Annoy?</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <h3 class="text-dark pl-3" style="border-left:3px red solid;">Apk to Prank your buddy's with OTP bombing</h3>
+                <p>It is an app for sending sms to your friends really fast and prank them. We have more API's than any other sms bomber and hence it can send more sms and it is the best sms bomber. This is an international sms bomber and work properly in most of the countries. Here you can also choose the speed of sending sms. The high speed you will select, faster will be the sms sent. We have created this app to prank your friends and family by sending them unlimited sms.</p>
+                <img class="w-50 d-block m-auto mb-5 rounded" src="sms_sender.png" alt="sms_sender.png" style="">
+                <button class="btn btn-dark"><a href="https://www.bombitup.net">Download Apk</a></button>
+                <hr>
+                <h3 class="mt-3">How To Protect Ownself from <b style="color:tomato">annoy?</b></h3>
+                <p>Its solutions is in these APK. There already have solutions to safe from Otp <b style="color:tomato">annoy.</b></p>
+                <h5>Steps for protect these particular <b style="color:tomato">annoy.</b></h5>
+                <ul class="mb-3">
+                  <li>Open SMS Bomber Apk</li>
+                  <li>Find protection List in this apk .</li>
+                  <li>Add your number.</li>
+                  <li>Your number is protected.</li>
+                </ul>
+                <p class="bg-light p-2 rounded mt-3 border border-light">
+                  In Internet have lots of Api and tools for OTP<b style="color:tomato"> annoy,</b>
+                  so you cannot able to protect number from all of these.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn  collapsed w-100" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Anxious with Mobile number
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
